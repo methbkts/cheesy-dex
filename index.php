@@ -4,9 +4,9 @@ require 'vendor/autoload.php';
 
 use App\Router\Router;
 
-// die($_GET['url']);
-
 $router = new Router($_GET['url']);
+
+
 
 $router->get('/', function(){
 	// echo "Bienvenue sur la homepage !";
@@ -24,6 +24,7 @@ $router->get('/admin', function(){
 $router->post('/admin', function(){
 	include 'public/admin.php';
 });
+
 
 
 $router->get('/fromages', function(){
