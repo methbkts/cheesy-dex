@@ -4,8 +4,26 @@ if (isset($_POST['username'])) {
 }
 ?>
 
-<form class="" action="/admin" method="post">
+<!-- <form class="d-flex flex-col justify-content-center align-self-center" >
 	<input type="text" name="username" placeholder="Pseudo" required>
-	<input type="password" name="password" placeholder="Mot de passe" minlength="4" required>
+	<input type="password" name="password" placeholder="Mot de passe"  required>
 	<input type="submit" value="Se Connecter">
-</form>
+</form>--> 
+
+    <form class="form-signin d-flex flex-col justify-content-center align-self-center" action="/admin" method="post">
+      <img class="" src="./public/img/cheese.svg" alt="" width="72" height="72">
+	  <h1 class="h3">Please log you</h1>
+	        <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputPseudo" class="form-control" placeholder="Pseudo" required autofocus>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" minlength="4" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+    </form>
