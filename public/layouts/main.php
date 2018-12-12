@@ -70,4 +70,5 @@ if (isset($_POST['username'])) {
 				</ul>
 			</div>
 		</div>
+<!--	<?php include 'public/views/home.php';?> -->
 </main>
