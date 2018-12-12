@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/public/css/style.css">
 	<title>CheesyDex</title>
 </head>
 <body>
@@ -17,4 +17,3 @@
 			<li><a href="/login">Login</a></li>
 		</ul>
 	</header>
- 
