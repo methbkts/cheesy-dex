@@ -19,12 +19,15 @@ $router->get('/login', function(){
 	include 'public/login.php';
 });
 $router->get('/admin', function(){
-	include 'public/admin.php';
+	include('public/admin.php');
 });
 $router->post('/admin', function(){
-	include 'public/admin.php';
+	// header("Location: /admin");
+	include('public/admin.php');
+	// echo 'wsh alors';
 });
 
+//
 
 $router->get('/fromages', function(){
 	// echo "Tous les fromages";
@@ -37,4 +40,11 @@ $router->post('/fromages/:id', function($id){
 	echo "Poster le fromage $id";
 });
 
+
+$router->post('/insertAction', function(){
+	include 'app/Actions/insertAction.php';
+});
+
+
+//
 $router->run();
