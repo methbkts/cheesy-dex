@@ -85,27 +85,27 @@ li {
 .map {
 	overflow: hidden;
 	height: 80vh;
-  
+}
 .map_list a{
 	color: inherit;
-
+}
 a:link, a:visited {
-	background-color: #f44336;
-	color: white;
-	padding: 14px 25px;
-	text-align: center;
+	
+	/* color: white; */
+	/* padding: 14px 25px; */
+	/* text-align: center; */
 	text-decoration: none;
-	transition: color 0.1s;
+	/* transition: color 0.1s; */
 }
   
 .map_list a.is-active {
-	color: #FFAA1C;
+	color: #FFAA1C!important;
 	font-weight: bold;
   
-a:active {
+/* a:active {
 	background-color: red;
 	color: black;
-} 
+}  */
 
 /* MAP */
 
