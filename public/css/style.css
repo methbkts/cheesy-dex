@@ -129,7 +129,7 @@ a:active {
 
 .log_img {
 	height: 100%;
-	width: 70%;
+	width: 50%;
 	background-image: url("/public/img/cheese_logo.jpeg");
 	background-position: center;
 	background-size: cover;
@@ -137,7 +137,7 @@ a:active {
 
 .log {
 	height: 100%;
-	width: 50%;
+	width: 70%;
 }
 
 .content_form {
@@ -149,6 +149,14 @@ a:active {
 .form-signin {
 	height: 50%;
 	width: 50%;
+}
+
+.bckgColorForm {
+	padding: 2%;
+	height: 50%;
+	width: 70%;
+	border-radius: 30px;
+	background-color: #eae7e6;
 }
 
 /* END LOGIN PAGE */
