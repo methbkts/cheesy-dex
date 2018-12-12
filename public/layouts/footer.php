@@ -4,5 +4,6 @@ if (isset($_POST['username'])) {
 }
 ?>
 
-</body>
+	</body>
+	 	<script type="text/javascript" src="/public/js/script.js"></script>
 </html>
