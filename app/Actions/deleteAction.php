@@ -2,5 +2,5 @@
 session_start();
 require_once('./app/Connect/db.php');
 
-addUserCheese($_SESSION['username'], $_POST['cheese']);
+deleteUserCheese($_SESSION['username'], $_POST['id']);
 header('Location: /');die;

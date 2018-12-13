@@ -2,7 +2,7 @@
 session_start();
 
 require_once('./app/Connect/db.php');
-$all = getAll();
+$cheeseUser = showUserCheese();
 
 if (isset($_POST['username'])) {
 	$_SESSION['username'] = $_POST['username'];
@@ -31,13 +31,13 @@ if (isset($_POST['username'])) {
 
 			<?php
 
-				foreach ($all as $key => $value) {
+				foreach ($cheeseUser as $key => $value) {
 					$tr = "<tr>";
       		$tr .= "<td>" . $value['fromages'] . "</td>";
 					$tr .= "<td>" . $value['lait'] . "</td>";
 					$tr .= "<td>" . $value['type'] . "</td>";
 					$tr .= "<td>" . $value['name'] . "</td>";
-					$tr .= "<td><inpu></td>";
+					$tr .= "<td><form action='/deleteAction.php' method='POST'><input type='hidden' name='id' value='" . $value['id'] . "'><input type='submit' value='X'></form></td>";
 					$tr .= "</tr>";
       		echo $tr;
 				}

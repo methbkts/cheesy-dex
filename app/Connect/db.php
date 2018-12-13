@@ -22,7 +22,6 @@
   return $request->fetchAll();
  }
 
-
 //$_SESSION['username'] = 'didi';
 //addUserCheese($_SESSION['username']);
 
@@ -36,8 +35,14 @@
     ":cheese" => $cheese,
   ]);
  }
- function deleteCheeseUser(){
-   
+
+ function deleteCheeseUser($id){
+  $connec = new PDO('mysql:dbname=cheesydex;host=localhost;charset=utf8', 'root', '0000');
+  $connec->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $request = $connec->prepare('DELETE FROM cheese_user WHERE id = :id');
+  $request-execute([
+    ":id" => $id
+  ]);
  }
 
  function showUserCheese(){
