@@ -1,12 +1,24 @@
 <?php
+session_start();
+
+
+$cheese = getAllCheese();
+
 if (isset($_POST['username'])) {
 	$_SESSION['username'] = $_POST['username'];
 }
 ?>
 
-  <form class="" action="/" method="post">
-  	<input type="checkbox" name="sect1" value="sect1"> Cacher la section 1<br>
-  	<input type="checkbox" name="sect2" value="sect2"> Cacher la section 2<br>
-  	<input type="checkbox" name="sect3" value="sect3"> Cacher la section 3<br><br>
-  	<input type="submit" value="Save">
+  <form class="" action="/insertAction" method="post">
+
+		<label for="">Ajouter un fromage à votre cheesydex:</label><br>
+  	<select type="text" name="cheese" value=""><br>
+			<?php
+			 	foreach ($cheese as $value) {
+			 		$id = $value['id'];
+					$name = $value['name'];
+					echo "<option value='.$id'.'>$name</option>";
+			 	}
+			 ?>
+  	<input type="submit" value="Ajouter">
   </form>
