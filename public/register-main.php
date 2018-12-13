@@ -4,7 +4,7 @@
             <div class="log_img"></div>
             <div class="log">
                 <div class="content_form d-flex justify-content-center align-item-center">
-                    <?php include 'connect-form.php'; ?>
+                    <?php include 'register-form.php'; ?>
                 </div>
             </div>
         </div>

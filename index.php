@@ -16,6 +16,10 @@ switch ($request_uri[0]) {
 	case '/login':
 		require 'public/login.php';
 		break;
+	// Register page
+	case '/register':
+		require 'public/register.php';
+		break;
     // Everything else
     default:
         header('HTTP/1.0 404 Not Found');
