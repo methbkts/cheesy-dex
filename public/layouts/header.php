@@ -11,14 +11,7 @@
 </head>
 <body>
 	<header>
-		<!--<h1>CheesyDex</h1>
-		<ul class="flex list-style-none">
-			<li><a href="/">Accueil</a></li>
-			<li><a href="/fromages">Liste des fromages</a></li>
-			<li><a href="/login">Login</a></li>
-		</ul> -->
-
- 
+    
 	<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex bd-highlight mb-3">
 	  <a class="navbar-brand" href="#"><img class="" src="./public/img/cheese.svg" alt="" width="72" height="50"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,4 +40,5 @@
 			</ul>
   		</div>
 	</nav>
+    
 </header>
