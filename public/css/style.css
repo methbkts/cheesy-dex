@@ -72,7 +72,7 @@ h2 {
 /*  */
 /*  */
 /*  */
-/* MAP */
+/* MAP*/
 
 .map_image {
 	width: 40%;
@@ -120,11 +120,11 @@ a:link, a:visited {
 	font-weight: bold;
 }
 
-/* MAP */
+/* END MAP*/
 /*  */
 /*  */
 /*  */
-/* LOGIN PAGE */
+/* LOGIN PAGE*/
 
 .container_fluid {
 	width: 100%;
@@ -138,7 +138,7 @@ a:link, a:visited {
 
 .log_img {
 	height: 100%;
-	width: 70%;
+	width: 50%;
 	background-image: url("/public/img/cheese_logo.jpeg");
 	background-position: center;
 	background-size: cover;
@@ -146,7 +146,7 @@ a:link, a:visited {
 
 .log {
 	height: 100%;
-	width: 50%;
+	width: 70%;
 }
 
 .content_form {
@@ -158,6 +158,14 @@ a:link, a:visited {
 .form-signin {
 	height: 50%;
 	width: 50%;
+}
+
+.bckgColorForm {
+	padding: 2%;
+	height: 50%;
+	width: 70%;
+	border-radius: 30px;
+	background-color: #eae7e6;
 }
 
 /* END LOGIN PAGE */
