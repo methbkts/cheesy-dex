@@ -158,12 +158,14 @@ a:link, a:visited {
 .form-signin {
 	height: 50%;
 	width: 50%;
+	flex-direction: column;
 }
 
 .bckgColorForm {
 	padding: 2%;
 	height: 50%;
 	width: 70%;
+	flex-direction: column;
 	border-radius: 30px;
 	background-color: #eae7e6;
 }
