@@ -5,6 +5,5 @@ if (isset($_POST['username'])) {
 ?>
 
 <main>
-<h1>toto</h1>
-
+	<?php include 'public/views/home.php';?>
 </main>

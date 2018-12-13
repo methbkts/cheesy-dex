@@ -4,7 +4,7 @@ if (isset($_POST['username'])) {
 }
 ?>
 
- <section id="fromages" class="fromages">
+<section id="fromages" class="fromages">
   <h2>Fromages</h2>
 <div class="card" style="width:400px">
   <img class="card-img-top" src="img_avatar1.png" alt="Card image">

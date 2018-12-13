@@ -1,6 +1,5 @@
 <?php
 include 'layouts/header.php';
-include 'login-main.php';
+include 'register-main.php';
 include 'layouts/footer.php';
 ?>
-

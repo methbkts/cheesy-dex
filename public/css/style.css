@@ -1,10 +1,9 @@
+/* BASE CSS */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext');
 
 * {
 	margin: 0;
 	padding: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -18,21 +17,34 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
 	text-align: center;
-	/*background-color: #008080;*/
+	height: 100vh;
+	width: 100vw;
+	/* background-color: #eae7e6; */
 	/*color: #b2d8d8;*/
 }
 
 header {
 	width: 100vw;
-	height: 15vh;
-	background-color: gainsboro;
+	height: 5vh;
+	/* background-color: gainsboro; */
 	/*text-transform: uppercase;*/
 }
 
-main {
-	height: 85vh;
+nav {
+	height: 100%;
+}
+
+footer {
 	width: 100vw;
-	overflow: scroll;
+	height: 5vh;
+	background-color: #f8f9fa;
+}
+
+main {
+	height: 90vh;
+	width: 100vw;
+	background-color: #eae7e6;
+	/* overflow: scroll; */
 }
 
 .center {
@@ -52,64 +64,111 @@ h2 {
 
 .flex {
 	display: flex;
-}
-
-.flex-col {
-	flex-direction: column;
-}
-
-.flex-center {
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 }
 
-.flex-evenly {
-	justify-content: space-evenly;
+/* END BASE CSS */
+/*  */
+/*  */
+/*  */
+/* MAP*/
+
+.map_image {
+	width: 40%;
+	float: left;
+}
+.map_image path {
+	fill: #FFD473;
+	stroke: #FFF;
+	stroke-width: 3px;
+	transition: fill 0.1s;
+}
+.map_image .is-active path {
+	fill: #FFAA1C;
+	transform: scaleX(1.01);
 }
 
-.flex-between {
-	justify-content: space-between;
+.map_list {
+	float: right;
+	width: 40%;
+	font-size: 20px;
 }
-
-.flex-start {
-	justify-content: flex-start;
-}
-
-.list-style-none {
+li {
 	list-style-type: none;
 }
 
-section {
+.map {
+	padding-top: 15px;
+	overflow: hidden;
+	height: 100%;
+}
+.map_list a{
+	color: inherit;
+}
+a:link, a:visited {
+	
+	/* color: white; */
+	/* padding: 14px 25px; */
+	/* text-align: center; */
+	text-decoration: none;
+	/* transition: color 0.1s; */
+}
+  
+.map_list a.is-active {
+	color: #FFAA1C!important;
+	font-weight: bold;
+}
+
+/* END MAP*/
+/*  */
+/*  */
+/*  */
+/* LOGIN PAGE*/
+
+.container_fluid {
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+}
+
+.log_img {
+	height: 100%;
+	width: 50%;
+	background-image: url("/public/img/cheese_logo.jpeg");
+	background-position: center;
+	background-size: cover;
+}
+
+.log {
+	height: 100%;
+	width: 70%;
+}
+
+.content_form {
 	height: 100%;
 	width: 100%;
+	background-color: #ddd0c9;
 }
 
-.section1 {
-	background-color: mediumslateblue;
+.form-signin {
+	height: 50%;
+	width: 50%;
 }
 
-.section2 {
-	background-color: aquamarine;
+.bckgColorForm {
+	padding: 2%;
+	height: 50%;
+	width: 70%;
+	border-radius: 30px;
+	background-color: #eae7e6;
 }
 
-.section3 {
-	background-color: greenyellow;
-}
-
-a:link, a:visited {
-	background-color: #f44336;
-	color: white;
-	padding: 14px 25px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-}
-
-a:hover {
-	background-color: red;
-}
-
-a:active {
-	background-color: red;
-	color: black;
-}
+/* END LOGIN PAGE */
+/*  */
+/*  */
+/*  */
