@@ -3,8 +3,8 @@ if (isset($_POST['username'])) {
 	$_SESSION['username'] = $_POST['username'];
 }
 ?>
-
-		<div class="map" id="map">
+<div class="container center">
+		<div class="map d-flex" id="map">
 			<div class="map_image">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 620 585">
 					<g>
@@ -67,4 +67,5 @@ if (isset($_POST['username'])) {
 					<li><a href="#" id="list-M">Provence-Alpes-Côte d'Azur</a></li>
 				</ul>
 			</div>
+		</div>
 		</div>
